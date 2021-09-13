@@ -1,0 +1,60 @@
+:root {
+    --lightblue: #b4d0e7;
+    --blue: #0061ff;
+    --bordeaux: #61082b;
+    --grey: #637381;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/************************************************
+* TAG selectors
+************************************************/
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+nav {
+    border-bottom: 1px solid lightgrey;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    font-size: 77px;
+}
+h2 {
+    font-size: 40px;
+}
+h3 {
+    font-size: 25px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 16px;
+}
+p {
+    font-size: 14px;
+}
+
+/************************************************
+* Layout classes
+************************************************/
+
+
+
+
+
+/************************************************
+* Utility classes
+************************************************/
