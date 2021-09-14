@@ -21,7 +21,7 @@ body {
 }
 
 nav {
-    border-bottom: 2px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
     width: 100%;
     position: fixed;
     top: 0;
@@ -73,7 +73,7 @@ header nav ul:nth-child(2) {
 }
 header nav ul li {
     float: left;
-    padding: 15px 20px;
+    padding: 7px 20px;
 }
 header nav ul:nth-child(2) li:last-child {
     background-color: var(--blue);
@@ -139,7 +139,7 @@ header h1 {
     padding: 30px;
 }
 
-.price-list hr {
+hr {
     width: 20%;
     color: lightgrey;
 }
@@ -163,6 +163,105 @@ header h1 {
 .col_4_9 > div, .col_5_9 > div {
     padding: 20px;
 }
+
+.feature-container img {
+    width: 100%;
+}
+
+.partner-container {
+    width: 100vw;
+}
+
+.partner-container > div:last-child {
+    background-color: var(--lightblue);
+}
+
+.partner-container > div:last-child > div {
+    position: relative;
+    padding: 50px 200px;
+}
+
+.partner-container > div:last-child > div > a {
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+.partner-container > div:last-child h3 {
+    color: #742141;
+}
+
+.partner-container > .middle {
+    width: 40%;
+    float: left;
+}
+
+.partner-container > .left, .right {
+    width: 30%;
+    float: left;
+}
+
+.partner-container::after, .left::after, .right::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.square {
+    width: 50%;
+    height: calc(30vw / 2);
+    text-align: center;
+    float: left;
+}
+
+.square img {
+    width: 60%;
+    vertical-align: middle;
+    filter: brightness(100) saturate(100);
+}
+
+.left .square:nth-child(1) {
+    background-color: #ABD7A5;
+}
+
+.left .square:nth-child(2) {
+    background-color: #7F3753;
+}
+
+.left .square:nth-child(3) {
+    background-color: #199ED3;
+}
+
+.left .square:nth-child(4) {
+    background-color: #FF4747;
+}
+
+.right .square:nth-child(1) {
+    background-color: #DD3049;
+}
+
+.right .square:nth-child(2) {
+    background-color: #BBD5E9;
+}
+
+.right .square:nth-child(3) {
+    background-color: #3B4E99;
+}
+
+.right .square:nth-child(4) {
+    background-color: #FFDC45;
+}
+
+.middle {
+    padding: 30px;
+    background-color: #f7f7f7;
+    height: 30vw;
+}
+
+.middle img {
+    width: 30%;
+}
+
 
 /************************************************
 * Layout classes
@@ -238,6 +337,12 @@ header h1 {
     color: black;
 }
 
+.btn-white {
+    background-color: white;
+    padding: 3px 30px;
+    border: none;
+}
+
 .pd-top-bot-12 {
     padding: 12px 0;
 }
@@ -250,6 +355,10 @@ header h1 {
     padding-top: 30px;
 }
 
+.pd-top-50 {
+    padding-top: 50px;
+}
+
 .pd-bot-20 {
     padding-bottom: 20px;
 }
@@ -258,6 +367,18 @@ header h1 {
     padding-bottom: 40px;
 }
 
+.pd-bot-50 {
+    padding-bottom: 50px;
+}
+
 .pd-bot-100 {
     padding-bottom: 100px;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.link {
+    color: var(--blue);
 }
