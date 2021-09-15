@@ -172,22 +172,22 @@ hr {
     width: 100vw;
 }
 
-.partner-container > div:last-child {
+.bottom-partner {
     background-color: var(--lightblue);
 }
 
-.partner-container > div:last-child > div {
+.bottom-partner > div {
     position: relative;
-    padding: 50px 200px;
+    padding: 50px 0;
 }
 
-.partner-container > div:last-child > div > a {
+.bottom-partner > div > a {
     position: absolute;
     top: 50px;
     right: 0;
 }
 
-.partner-container > div:last-child h3 {
+.bottom-partner h3 {
     color: #742141;
 }
 
@@ -210,14 +210,17 @@ hr {
 .square {
     width: 50%;
     height: calc(30vw / 2);
-    text-align: center;
     float: left;
+    position: relative;
 }
 
 .square img {
     width: 60%;
-    vertical-align: middle;
-    filter: brightness(100) saturate(100);
+    filter: invert(100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 
 .left .square:nth-child(1) {
@@ -262,6 +265,41 @@ hr {
     width: 30%;
 }
 
+.accordion-container {
+    list-style: none;
+}
+
+.accordion-item {
+    border-bottom: 1px solid lightgrey;
+    position: relative;
+    padding-right: 60px;
+}
+
+.accordion-item h5 {
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.accordion-item-content {
+    padding-bottom: 20px;
+    display: none;
+}
+
+.accordion-item:focus .accordion-item-content {
+    display: block;
+}
+
+.accordion-item-icon {
+    position: absolute;
+    right: 20px;
+    transform: rotateZ(0deg);
+    transition: transform .3s;
+}
+
+.accordion-item:focus .accordion-item-icon {
+    transform: rotateZ(180deg);
+}
+
 
 /************************************************
 * Layout classes
@@ -277,7 +315,7 @@ hr {
     max-width: 1010px;
     width: 100%;
     margin: auto;
-    padding: 150px 0;
+    padding-top: 150px;
 }
   
 .row:after {
