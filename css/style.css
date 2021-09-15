@@ -1,7 +1,6 @@
 :root {
     --lightblue: #b4d0e7;
     --blue: #0061ff;
-    --bordeaux: #61082b;
     --grey: #637381;
 }
 
@@ -12,7 +11,7 @@
 }
 
 /************************************************
-* TAG selectors
+* Tag and classes selectors
 ************************************************/
 
 body {
@@ -75,8 +74,13 @@ header nav ul li {
     float: left;
     padding: 7px 20px;
 }
-header nav ul:nth-child(2) li:last-child {
-    background-color: var(--blue);
+
+header nav ul li a {
+    color: black;
+}
+
+header nav ul:last-child li:last-child a:last-child {
+    color: white;
 }
 
 header img {
@@ -87,8 +91,8 @@ header h1 {
     padding: 60px 0 40px 0;
 }
 
-.arrow-down {
-    font-size: 40px;
+.fa-arrow-down {
+    font-size: 30px;
 }
 
 .row .col_3_9 {
@@ -139,6 +143,14 @@ header h1 {
     padding: 30px;
 }
 
+form span {
+    padding-right: 30px;
+}
+
+form input {
+    margin-right: 5px;
+}
+
 hr {
     width: 20%;
     color: lightgrey;
@@ -174,6 +186,7 @@ hr {
 
 .bottom-partner {
     background-color: var(--lightblue);
+    padding: 100px 0;
 }
 
 .bottom-partner > div {
@@ -183,11 +196,11 @@ hr {
 
 .bottom-partner > div > a {
     position: absolute;
-    top: 50px;
+    top: 0;
     right: 0;
 }
 
-.bottom-partner h3 {
+.bottom-partner h2 {
     color: #742141;
 }
 
@@ -272,7 +285,7 @@ hr {
 .accordion-item {
     border-bottom: 1px solid lightgrey;
     position: relative;
-    padding-right: 60px;
+    padding: 10px 60px 20px 0;
 }
 
 .accordion-item h5 {
@@ -298,6 +311,48 @@ hr {
 
 .accordion-item:focus .accordion-item-icon {
     transform: rotateZ(180deg);
+}
+
+main .container:last-child {
+    padding: 0;
+}
+
+.faq-section {
+    padding: 100px 0;
+}
+
+.faq-section li:first-child {
+    border-top: 1px solid lightgrey;
+}
+
+.faq-section li:hover {
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    padding: 40px 150px;
+}
+
+footer h4 {
+    color: white;
+    padding-bottom: 20px;
+}
+
+footer li {
+    padding: 4px 0;
+}
+
+footer .col_2_10 {
+    font-size: 14px;
+}
+
+.btn:hover {
+    filter: brightness(90%);
+}
+
+.footer-language {
+    color: lightgrey;
 }
 
 
@@ -326,6 +381,10 @@ hr {
   
 [class*="col_"] {
     float: left;
+}
+
+.col_2_10 {
+    width: calc(100% / 10 * 2);
 }
   
 .col_1_9 {
@@ -357,10 +416,6 @@ hr {
 * Utility classes
 ************************************************/
 
-.small-text {
-    font-size: 14px;
-}
-
 .btn {
     border: none;
     padding: 5px 20px;
@@ -373,6 +428,7 @@ hr {
 .btn-border {
     border: 1px solid black;
     color: black;
+    background-color: white;
 }
 
 .btn-white {
@@ -403,10 +459,6 @@ hr {
 
 .pd-bot-40 {
     padding-bottom: 40px;
-}
-
-.pd-bot-50 {
-    padding-bottom: 50px;
 }
 
 .pd-bot-100 {
