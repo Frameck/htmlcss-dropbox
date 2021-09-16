@@ -51,7 +51,6 @@ h3, h4, h5 {
 }
 
 a {
-    color: white;
     text-decoration: none;
 }
 
@@ -75,12 +74,8 @@ header nav ul li {
     padding: 7px 20px;
 }
 
-header nav ul li a {
+header a {
     color: black;
-}
-
-header nav ul:last-child li:last-child a:last-child {
-    color: white;
 }
 
 header img {
@@ -343,6 +338,10 @@ footer li {
     padding: 4px 0;
 }
 
+footer a {
+    color: white;
+}
+
 footer .col_2_10 {
     font-size: 14px;
 }
@@ -423,6 +422,7 @@ footer .col_2_10 {
 
 .btn-blue {
     background-color: var(--blue);
+    color: white;
 }
 
 .btn-border {
@@ -435,6 +435,7 @@ footer .col_2_10 {
     background-color: white;
     padding: 3px 30px;
     border: none;
+    color: black;
 }
 
 .pd-top-bot-12 {
